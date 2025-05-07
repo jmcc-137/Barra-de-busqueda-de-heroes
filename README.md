@@ -23,15 +23,15 @@ Una aplicación web que permite buscar héroes de Marvel o DC mediante una barra
 
 ## 📁 Estructura del proyecto
 
-superhero-search/
-│
-├── index.html
-├── style.css
-├── main.js
-├── data/
-│ └── heroes.js # Contiene la base de datos local de héroes
-└── components/
-└── hero-card.js # Web Component de la tarjeta del héroe
+    superhero-search/
+    │
+    ├── index.html
+    ├── style.css
+    ├── main.js
+    ├── data/
+    │ └── heroes.js # Contiene la base de datos local de héroes
+    └── components/
+    └── hero-card.js # Web Component de la tarjeta del héroe
 
 
 ## 🧠 Cómo funciona
