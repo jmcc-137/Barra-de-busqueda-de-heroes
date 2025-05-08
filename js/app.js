@@ -198,6 +198,85 @@ const heroes = [
       aparicion: 1964,
       resumen: "Hechicera que conjura con palabras al revés.",
       descripcion: "Zatanna es una ilusionista y maga real que combate el mal usando magia auténtica, invocando hechizos mediante frases al revés. Es hija de un poderoso mago y miembro de la Liga de la Justicia Oscura."
+    },
+    {
+      img:"/img/cat.jpeg",
+      icon:"/img/icon cat.jpeg",
+      nombre: "Selina Kyle",
+      alias: "Catwoman",
+      casa: "DC",
+      aparicion: 1940,
+      resumen: "Antihéroe ágil y escurridiza.",
+      descripcion: "Selina es una ladrona con un fuerte código moral. Aunque a veces antagonista, su relación con Batman y sus acciones han demostrado su lado heroico."
+    },
+    {
+      img:"/img/Marvel.jpeg",
+      icon:"/img/icon marvel.jpeg",
+      nombre: "Carol Danvers",
+      alias: "Captain Marvel",
+      casa: "Marvel",
+      aparicion: 1968,
+      resumen: "Heroína cósmica con poder explosivo.",
+      descripcion: "Piloto de la Fuerza Aérea, Carol obtiene poderes tras un accidente con tecnología alienígena. Se convierte en una de las heroínas más poderosas del universo."
+    },
+    {
+      img:"/img/night.jpeg",
+      icon:"/img/icon night.jpeg",
+      nombre: "Dick Grayson",
+      alias: "Nightwing",
+      casa: "DC",
+      aparicion: 1984,
+      resumen: "Ex-Robin convertido en líder independiente.",
+      descripcion: "Dick Grayson fue el primer Robin, y luego evolucionó a Nightwing. Con entrenamiento de Batman, lidera a los Jóvenes Titanes y protege Blüdhaven."
+    },
+    { img:"/img/dar.jpeg",
+      icon:"/img/icon dar.jpeg",
+      nombre: "Matt Murdock",
+      alias: "Daredevil",
+      casa: "Marvel",
+      aparicion: 1964,
+      resumen: "Abogado ciego con sentidos sobrehumanos.",
+      descripcion: "Matt quedó ciego en un accidente químico, que potenció sus otros sentidos. De día abogado, de noche vigilante en Hell’s Kitchen, lucha contra el crimen con acrobacias y coraje."
+    },
+    {
+      img:"/img/martian.jpeg",
+      icon:"/img/icon martian.jpeg",
+      nombre: "J'onn J'onzz",
+      alias: "Martian Manhunter",
+      casa: "DC",
+      aparicion: 1955,
+      resumen: "Último marciano y poderoso telépata.",
+      descripcion: "J'onn es un marciano verde con habilidades como telepatía, intangibilidad y cambio de forma. Es un miembro clave de la Liga de la Justicia con profundo sentido de justicia."
+    },
+    {
+      img:"/img/ant.jpeg",
+      icon:"/img/icon ant.jpeg",
+      nombre: "Scott Lang",
+      alias: "Ant-Man",
+      casa: "Marvel",
+      aparicion: 1979,
+      resumen: "Héroe que puede encogerse y crecer.",
+      descripcion: "Scott Lang toma el manto de Ant-Man usando tecnología de Hank Pym. Con humor y corazón, lucha contra el crimen a tamaños microscópicos y gigantescos."
+    },
+    {
+      img:"/img/supergirl.jpeg",
+      icon:"/img/icon supergirl.jpeg",
+      nombre: "Kara Zor-El",
+      alias: "Supergirl",
+      casa: "DC",
+      aparicion: 1959,
+      resumen: "Prima de Superman con poderes equivalentes.",
+      descripcion: "Kara es una kryptoniana enviada para proteger a su primo Kal-El. Con fuerza, velocidad y visión láser, lucha por la justicia con determinación."
+    },
+    {
+      img:"/img/wolverine.jpeg",
+      icon:"/img/icon wolverin.jpeg",
+      nombre: "Logan",
+      alias: "Wolverine",
+      casa: "Marvel",
+      aparicion: 1974,
+      resumen: "Mutante con garras y factor de curación.",
+      descripcion: "Wolverine es un mutante endurecido por guerras y traumas. Con garras retráctiles, sentido animal y un factor regenerativo, es uno de los X-Men más temidos y queridos."
     }
     
   ];
@@ -339,7 +418,7 @@ class HeroCard extends HTMLElement{
      const style =document.createElement("style")
 
       wrapper.innerHTML=`
-       <input type="text" placeholder="Buscar héroe..." />
+       <input type="text" placeholder="Buscar héroe..." / required>
       `
 
       style.textContent = `
