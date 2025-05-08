@@ -10,7 +10,8 @@ const heroes = [
       descripcion: "Bruce Wayne, también conocido como Batman, es un justiciero sin poderes que protege Gotham City usando su intelecto, habilidades de combate, y tecnología avanzada. Motivado por el asesinato de sus padres, lucha contra el crimen desde las sombras como uno de los miembros fundadores de la Liga de la Justicia."
     },
     {
-      img:"",
+      img:"/img/superman.jpeg",
+      icon:"/img/icon superman.jpeg",
       nombre: "Clark Kent",
       alias: "Superman",
       casa: "DC",
@@ -29,6 +30,8 @@ const heroes = [
       descripcion: "Anthony Edward Stark es Iron Man, un inventor brillante y CEO de Stark Industries. Después de un accidente que le dejó fragmentos de metralla cerca del corazón, construyó una armadura de alta tecnología para sobrevivir y posteriormente evolucionó como héroe. Miembro fundador de los Vengadores y defensor del planeta usando la ciencia como arma."
     },
     {
+      icon:"/img/icon spiderman.jpeg",
+      img:"/img/spiderman.jpeg",
       nombre: "Peter Parker",
       alias: "Spider-Man",
       casa: "Marvel",
@@ -37,6 +40,8 @@ const heroes = [
       descripcion: "Peter Parker es un joven neoyorquino que obtiene poderes arácnidos tras ser mordido por una araña radioactiva. Con fuerza, agilidad y sentido arácnido, combate el crimen mientras equilibra su vida personal, estudios y trabajo. 'Un gran poder conlleva una gran responsabilidad' es su lema eterno."
     },
     {
+      img:"/img/wonder woman.jpeg",
+      icon:"/img/icon wonder.jpeg",
       nombre: "Diana Prince",
       alias: "Wonder Woman",
       casa: "DC",
@@ -45,8 +50,10 @@ const heroes = [
       descripcion: "Diana Prince es Wonder Woman, princesa de las Amazonas de Themyscira. Dotada de fuerza sobrehumana, inmortalidad parcial y armas mágicas como el Lazo de la Verdad y los brazaletes indestructibles, lucha por la justicia, la igualdad y la paz. Es uno de los pilares de la Liga de la Justicia."
     },
     {
+      img:"/img/CapitanAmerica.jpeg",
+      icon:"/img/icon Capitan.jpeg",
       nombre: "Steve Rogers",
-      alias: " Capitán América",
+      alias: "Capitán América",
       casa: "Marvel",
       aparicion: 1941,
       resumen: " Súper soldado patriótico.",
