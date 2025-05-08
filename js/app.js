@@ -60,6 +60,8 @@ const heroes = [
       descripcion: "Steve Rogers fue un joven frágil transformado en un supersoldado gracias a un experimento del gobierno estadounidense durante la Segunda Guerra Mundial. Como Capitán América, lucha por la justicia, lidera a los Vengadores y es un símbolo de valor, sacrificio y principios firmes."
     },
     {
+      img:"/img/batgirl.jpeg",
+      icon:"/img/icon batgirl.jpeg",
       nombre: "Barbara Gordon",
       alias: "Batgirl",
       casa: "DC",
@@ -68,17 +70,142 @@ const heroes = [
       descripcion: "Hija del comisionado Gordon, Barbara tomó el manto de Batgirl para luchar contra el crimen en Gotham. Tras quedar parapléjica por el Joker, se reinventó como Oracle, una hacker e informante clave para la comunidad de superhéroes, demostrando que su verdadero poder es su inteligencia y determinación."
     },
     {
+      img:"/img/mr.fantastic.jpeg",
+      icon:"/img/icon mr.fantastic.jpeg",
       nombre: "Reed Richards",
       alias: "Mr. Fantastic",
       casa: "Marvel",
       aparicion: 1961,
       resumen: "El hombre más elástico y uno de los más inteligentes.",
       descripcion: "Reed Richards es el líder de los Cuatro Fantásticos. Después de un accidente cósmico, desarrolló la capacidad de estirar su cuerpo a formas imposibles. Es un genio científico dedicado a resolver problemas a escala mundial y cósmica, utilizando su intelecto y habilidades junto a su equipo."
+    },
+    {
+      img:"/img/dr.strange.jpeg",
+      icon:"/img/icon dr.strange.jpeg",
+      nombre: "Stephen Strange",
+      alias: "Doctor Strange",
+      casa: "Marvel",
+      aparicion: 1963,
+      resumen: "Hechicero Supremo y guardián de las artes místicas.",
+      descripcion: "Stephen Strange fue un neurocirujano talentoso hasta que un accidente le cambió la vida. Se convirtió en el Hechicero Supremo, usando sus conocimientos mágicos para proteger el mundo de amenazas sobrenaturales."
+    },
+    {
+      img:"/img/flash.jpeg",
+      icon:"/img/icon flash.jpeg",
+      nombre: "Barry Allen",
+      alias: "Flash",
+      casa: "DC",
+      aparicion: 1956,
+      resumen: "El hombre más rápido del mundo.",
+      descripcion: "Barry Allen, tras un accidente con químicos y un rayo, obtiene velocidad sobrehumana. Como Flash, protege Central City y es miembro clave de la Liga de la Justicia."
+    },
+    {
+      img:"/img/blackwidow.jpeg",
+      icon:"/img/icon black.jpeg",
+      nombre: "Natasha Romanoff",
+      alias: "Black Widow",
+      casa: "Marvel",
+      aparicion: 1964,
+      resumen: "Espía mortal con un pasado misterioso.",
+      descripcion: "Entrenada en la Sala Roja, Natasha es una experta en combate, espionaje y tecnología. Redimida, se convierte en una pieza esencial de los Vengadores."
+    },
+    {
+      img:"/img/greenlantern.jpeg",
+      icon:"/img/icon green.jpeg",
+      nombre: "Hal Jordan",
+      alias: "Green Lantern",
+      casa: "DC",
+      aparicion: 1959,
+      resumen: "Portador del anillo más poderoso del universo.",
+      descripcion: "Hal Jordan es un piloto que se convierte en Green Lantern, usando un anillo de poder alimentado por su voluntad para defender el universo como miembro de los Green Lantern Corps."
+    },
+    {
+      img:"/img/blackpanter.jpeg",
+      icon:"/img/icon panter.jpeg",
+      nombre: "T'Challa",
+      alias: "Black Panther",
+      casa: "Marvel",
+      aparicion: 1966,
+      resumen: "Rey de Wakanda y guerrero imparable.",
+      descripcion: "T'Challa es el líder de Wakanda, nación avanzada tecnológicamente. Con el poder del corazón de hierba y un traje de vibranio, combate el mal como Black Panther."
+    },
+    {
+      img:"/img/Acuaman.jpeg",
+      icon:"/img/icon acuaman.jpeg",
+      nombre: "Arthur Curry",
+      alias: "Aquaman",
+      casa: "DC",
+      aparicion: 1941,
+      resumen: "Rey de Atlantis y defensor de los océanos.",
+      descripcion: "Mitad humano, mitad atlante, Aquaman controla el agua, se comunica con criaturas marinas y defiende tanto la superficie como los mares del planeta."
+    },
+    {
+      img:"/img/starlord.jpeg",
+      icon:"/img/icon star.jpeg",
+      nombre: "Peter Quill",
+      alias: "Star-Lord",
+      casa: "Marvel",
+      aparicion: 1976,
+      resumen: "Líder de los Guardianes de la Galaxia.",
+      descripcion: "Hijo de un alienígena y una humana, Peter es un aventurero espacial con gran sentido del humor, líder de un equipo que protege la galaxia de amenazas cósmicas."
+    },
+    {
+      img:"/img/cyborg.jpeg",
+      icon:"/img/icon cyborg.jpeg",
+      nombre: "Victor Stone",
+      alias: "Cyborg",
+      casa: "DC",
+      aparicion: 1980,
+      resumen: "Humano mejorado con tecnología alienígena.",
+      descripcion: "Victor fue salvado con tecnología avanzada después de un accidente. Ahora es Cyborg, mitad máquina, mitad humano, con múltiples habilidades tecnológicas y miembro de la Liga de la Justicia."
+    },
+    {
+      img:"/img/hulk.jpeg",
+      icon:"/img/icon hulk.jpeg",
+      nombre: "Bruce Banner",
+      alias: "Hulk",
+      casa: "Marvel",
+      aparicion: 1962,
+      resumen: "Científico con una ira monstruosa.",
+      descripcion: "Bruce Banner se transforma en Hulk cuando se enfurece, convirtiéndose en una fuerza imparable. Aunque lucha con su identidad, ha salvado al mundo incontables veces."
+    },
+    {
+      img:"/img/constantine.jpeg",
+      icon:"/img/icon constantine.jpeg",
+      nombre: "John Constantine",
+      alias: "Constantine",
+      casa: "DC",
+      aparicion: 1985,
+      resumen: "Hechicero cínico con alma atormentada.",
+      descripcion: "Detective de lo oculto, Constantine usa magia, trampas y su astucia para enfrentar demonios, fantasmas y entidades sobrenaturales, a menudo a un gran costo personal."
+    },
+    {
+      img:"/img/witch.jpeg",
+      icon:"/img/icon witch.jpeg",
+      nombre:"Wanda Maximoff",
+      alias: "Scarlet Witch",
+      casa: "Marvel",
+      aparicion: 1964,
+      resumen: "Poderosa hechicera capaz de alterar la realidad.",
+      descripcion: "Wanda es una mutante y usuaria de magia del caos. Ha sido tanto heroína como amenaza, luchando por controlar su inmenso poder emocional y destructivo."
+    },
+    {
+      img:"/img/zatanna.jpeg",
+      icon:"/img/icon zatanna.jpeg",
+      nombre: "Zatanna Zatara",
+      alias: "Zatanna",
+      casa: "DC",
+      aparicion: 1964,
+      resumen: "Hechicera que conjura con palabras al revés.",
+      descripcion: "Zatanna es una ilusionista y maga real que combate el mal usando magia auténtica, invocando hechizos mediante frases al revés. Es hija de un poderoso mago y miembro de la Liga de la Justicia Oscura."
     }
+    
   ];
-const input = document.getElementById("buscador")
-const result = document.getElementById("resultado")
-  class HeroCard extends HTMLElement{
+
+  
+
+
+class HeroCard extends HTMLElement{
     constructor(){
       super();
       this.attachShadow({mode:"open"})
@@ -94,6 +221,7 @@ const result = document.getElementById("resultado")
       const style = document.createElement('style')
 
       wrapper.innerHTML = /* html */ `
+      
       <div class="card">
         <div class="img"><img src="${hero.img}"></div>
         <br>
@@ -106,18 +234,32 @@ const result = document.getElementById("resultado")
       `
 
       style.textContent = /* css */ `
+      @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+        .boogaloo-regular {
+        font-family: "Boogaloo", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: yellow;
+      }
+  
+
+      *{
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Boogaloo", sans-serif;
+          justify-content:center;
+      }
       .card {
-        display: flex;
-        flex-direction: column;
+        
         text-align: center;
-        background: #fff;
+        background: #0a1c20;
         border: 2px solid ${hero.casa === "DC" ? "#0a74da" : "#e62429"};
         border-radius: 1rem;
         padding: 1rem;
         max-width: 250px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        font-family: sans-serif;
         margin-top: 1rem;
+        color: #41a6de;
       }
       .alias {
         font-size: 1.5rem;
@@ -156,6 +298,7 @@ const result = document.getElementById("resultado")
         transform: ${hero.casa ==="DC" ? "rotate(-4deg)": "rotate(4deg)"};
        
         }
+        
       `
       
       this.shadowRoot.innerHTML = "";
@@ -179,16 +322,66 @@ const result = document.getElementById("resultado")
 
     
   }
+
   customElements.define("hero-card", HeroCard)
 
-  input.addEventListener("input", () =>{
-    const query = input.value.trim().toLowerCase();
+  class SearchBar extends HTMLElement{
+    constructor(){
+      super();
+      this.attachShadow({mode:"open"});
+    }
+    connectedCallback(){
+      this.render();
+    }
+
+    render(){
+      const wrapper= document.createElement("div")
+     const style =document.createElement("style")
+
+      wrapper.innerHTML=`
+       <input type="text" placeholder="Buscar héroe..." />
+      `
+
+      style.textContent = `
+      input {
+          width: 100%;
+          max-width: 300px;
+          padding: 0.5rem 1rem;
+          border: 2px solid #ccc;
+          border-radius: 1rem;
+          font-size: 1rem;
+          outline: none;
+          font-family: sans-serif;
+        }
+      
+      `
+      const input = wrapper.querySelector("input");
+      input.addEventListener("input", () =>{
+        this.dispatchEvent(new CustomEvent("search-change", {
+          detail: input.value,
+          bubbles:true,
+          composed:true,
+        }));
+
+      });
+      this.shadowRoot.innerHTML = "";
+      this.shadowRoot.appendChild(style)
+      this.shadowRoot.appendChild(wrapper)
+    }
+  }
+  customElements.define("search-bar", SearchBar)
+  
+  const result = document.getElementById("resultado")
+  const search = document.querySelector("search-bar")
+  search.addEventListener("search-change", (e) =>{
+
+    const query = e.detail.trim().toLowerCase();
     result.innerHTML = "";
 
     if(query ==="") return;
 
     const found = heroes.filter( h=>
-      h.alias.toLocaleLowerCase().startsWith(query) || h.nombre.toLocaleLowerCase().startsWith(query)
+      h.alias.toLocaleLowerCase().startsWith(query) 
     )
 
     if (found.length >= 1) {
@@ -205,4 +398,4 @@ const result = document.getElementById("resultado")
       `
       return
     }
-  });
+  }); 
