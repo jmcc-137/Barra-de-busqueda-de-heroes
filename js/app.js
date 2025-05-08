@@ -1,6 +1,7 @@
 const heroes = [
     {
       img:"/img/batman.jpeg",
+      icon:"/img/icon batmat.jpeg",
       nombre: "Bruce Wayne",
       alias: "Batman",
       casa: "DC",
@@ -9,6 +10,7 @@ const heroes = [
       descripcion: "Bruce Wayne, también conocido como Batman, es un justiciero sin poderes que protege Gotham City usando su intelecto, habilidades de combate, y tecnología avanzada. Motivado por el asesinato de sus padres, lucha contra el crimen desde las sombras como uno de los miembros fundadores de la Liga de la Justicia."
     },
     {
+      img:"",
       nombre: "Clark Kent",
       alias: "Superman",
       casa: "DC",
@@ -17,6 +19,8 @@ const heroes = [
       descripcion: "Clark Kent, nacido como Kal-El en el planeta Krypton, es Superman, uno de los superhéroes más poderosos del universo. Con habilidades como superfuerza, vuelo, visión láser y más, lucha por la verdad, la justicia y la esperanza como símbolo de la paz global y miembro central de la Liga de la Justicia."
     },
     {
+      img :"/img/ironman.jpeg",
+      icon:"/img/icon ironman.jpeg",
       nombre: "Tony Stark",
       alias: "Iron Man",
       casa: "Marvel",
@@ -141,8 +145,8 @@ const result = document.getElementById("resultado")
         border-radius: 20px;
         margin:0;
         border: solid;
-        box-shadow:color: ${hero.casa === "DC" ? "0 4px 12px rgba(209, 15, 8, 0.9);" : "0 4px 12px rgba(27, 146, 175, 0.9);"}; 
-        transform: rotate(-5deg)
+        box-shadow: ${hero.casa === "DC" ? "0 4px 12px rgba(27, 146, 175, 0.9);" : "0 4px 12px rgba(209, 15, 8, 0.9);"}; 
+        transform: ${hero.casa ==="DC" ? "rotate(-4deg)": "rotate(4deg)"};
        
         }
       `
@@ -156,7 +160,9 @@ const result = document.getElementById("resultado")
         Swal.fire({
           title: hero.alias,
           html: `<p>${hero.descripcion}</p>`,
-          icon: 'info',
+          imageUrl: `.${hero.icon}`,
+          imageWidth: 250,
+          imageHeidt: 250,
           confirmButtonText: 'Cerrar',
           background: '#fefefe',
           confirmButtonColor: hero.casa === "DC" ? "#0a74da" : "#e62429"
