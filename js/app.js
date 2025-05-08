@@ -1,5 +1,6 @@
 const heroes = [
     {
+      img:"/img/batman.jpeg",
       nombre: "Bruce Wayne",
       alias: "Batman",
       casa: "DC",
@@ -83,6 +84,8 @@ const result = document.getElementById("resultado")
 
       wrapper.innerHTML = /* html */ `
       <div class="card">
+        <div class="img"><img src="${hero.img}"></div>
+        <br>
         <div class="alias">${hero.alias}</div>
         <div class="nombre">(${hero.nombre})</div>
         <div class="casa">${hero.casa} - ${hero.aparicion}</div>
@@ -93,11 +96,14 @@ const result = document.getElementById("resultado")
 
       style.textContent = /* css */ `
       .card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         background: #fff;
         border: 2px solid ${hero.casa === "DC" ? "#0a74da" : "#e62429"};
         border-radius: 1rem;
         padding: 1rem;
-        max-width: 400px;
+        max-width: 250px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         font-family: sans-serif;
         margin-top: 1rem;
@@ -125,6 +131,20 @@ const result = document.getElementById("resultado")
         cursor: pointer;
         font-weight: bold;
       }
+      
+        .img{
+        display:flex;
+        justify-content: center;
+        }
+        img{
+        width: 25vh;
+        border-radius: 20px;
+        margin:0;
+        border: solid;
+        box-shadow:color: ${hero.casa === "DC" ? "0 4px 12px rgba(209, 15, 8, 0.9);" : "0 4px 12px rgba(27, 146, 175, 0.9);"}; 
+        transform: rotate(-5deg)
+       
+        }
       `
       
       this.shadowRoot.innerHTML = "";
