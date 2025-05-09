@@ -318,7 +318,6 @@ class HeroCard extends HTMLElement{
         font-family: "Boogaloo", sans-serif;
         font-weight: 600;
         font-style: normal;
-        color: yellow;
       }
   
 
@@ -388,15 +387,33 @@ class HeroCard extends HTMLElement{
       btn.addEventListener("click", () => {
         Swal.fire({
           title: hero.alias,
-          html: `<p>${hero.descripcion}</p>`,
-          imageUrl: `.${hero.icon}`,
-          imageWidth: 250,
-          imageHeidt: 250,
+          html: `
+           <div style="display: flex; align-items: flex-start; gap: 20px; text-align: left;">
+            <img src="${hero.img}" alt="${hero.nombre}" style="width: 250px; height: auto; border-radius: 10px;" />
+            <div>
+              <p><strong>Alias:</strong> ${hero.alias}</p>
+              <p><strong>Casa:</strong> ${hero.casa}</p>
+              <p><strong>Aparición:</strong> ${hero.aparicion}</p>
+              <p><strong>Descripción:</strong><br>${hero.descripcion}</p>
+            </div>
+          </div>
+          
+          `
+          
+          ,
+
+          
           confirmButtonText: 'Cerrar',
-          background: '#fefefe',
-          confirmButtonColor: hero.casa === "DC" ? "#0a74da" : "#e62429"
+          with:'700px',
+          confirmButtonColor: hero.casa === "DC" ? "#e62429": "#0a74da",
+          background:  hero.casa === "DC" ? "#0a74da" : "#e62429",
+          cumtomClasss:{
+            popup:'custom-swal-popup'
+          }
+          
         });
       });
+    
     }  
 
     
