@@ -295,8 +295,7 @@ class HeroCard extends HTMLElement{
     }
 
     render(hero){
- const wrapper = document.createElement('div')
-
+      const wrapper = document.createElement('div')
       const style = document.createElement('style')
 
       wrapper.innerHTML = /* html */ `
@@ -338,6 +337,7 @@ class HeroCard extends HTMLElement{
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         margin-top: 1rem;
         color: #41a6de;
+         margin: 1rem;
       }
       .alias {
         font-size: 1.5rem;
@@ -386,31 +386,45 @@ class HeroCard extends HTMLElement{
       const btn = wrapper.querySelector("#ver-mas");
       btn.addEventListener("click", () => {
         Swal.fire({
-          title: hero.alias,
+          title: hero.nombre,
           html: `
-           <div style="display: flex; align-items: flex-start; gap: 20px; text-align: left;">
-            <img src="${hero.img}" alt="${hero.nombre}" style="width: 250px; height: auto; border-radius: 10px;" />
-            <div>
-              <p><strong>Alias:</strong> ${hero.alias}</p>
-              <p><strong>Casa:</strong> ${hero.casa}</p>
-              <p><strong>Aparición:</strong> ${hero.aparicion}</p>
-              <p><strong>Descripción:</strong><br>${hero.descripcion}</p>
+            <div style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+              text-align: left;
+              justify-content: center;
+            ">
+              <img src="${hero.icon}" alt="${hero.nombre}" style="
+                width: 150px;
+                height: auto;
+                border-radius: 10px;
+                flex-shrink: 0;
+              " />
+              <div style="min-width: 200px; max-width: 400px;">
+                <p><strong>Alias:</strong> ${hero.alias}</p>
+                <p><strong>Casa:</strong> ${hero.casa}</p>
+                <p><strong>Aparición:</strong> ${hero.aparicion}</p>
+                <p><strong>Descripción:</strong><br>${hero.descripcion}</p>
+              </div>
             </div>
-          </div>
-          
-          `
-          
-          ,
-
-          
+            <style>
+              @media (max-width: 600px) {
+                .swal2-html-container div {
+                  flex-direction: column !important;
+                  align-items: center;
+                }
+                .swal2-html-container img {
+                  margin-bottom: 10px;
+                }
+              }
+            </style>
+          `,
+          showCloseButton: true,
           confirmButtonText: 'Cerrar',
-          with:'700px',
-          confirmButtonColor: hero.casa === "DC" ? "#e62429": "#0a74da",
-          background:  hero.casa === "DC" ? "#0a74da" : "#e62429",
-          cumtomClasss:{
-            popup:'custom-swal-popup'
-          }
-          
+          width: '700px',
+          background: '#1e1e1e',
+          color: '#ffffff'
         });
       });
     

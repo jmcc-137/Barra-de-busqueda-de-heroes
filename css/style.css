@@ -13,7 +13,20 @@
     box-sizing: border-box;
     font-family: "Boogaloo", sans-serif;
     text-align: center;
-    
+   
+}
+body{
+  background-image: url('/img/fondo.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  
+}
+h1{
+  color: yellow;
+  font-size: 5vh;
+ 
 }
 
 .padre{
@@ -35,3 +48,5 @@
       justify-content:center;
     }
   }
+
+  
