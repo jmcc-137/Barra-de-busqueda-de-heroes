@@ -45,4 +45,5 @@ Una aplicación web que permite buscar héroes de Marvel o DC mediante una barra
 ## 🚀 Cómo usar
 
 1. Clona el repositorio:
+   https://github.com/jmcc-137/Barra-de-busqueda-de-heroes.git
    
